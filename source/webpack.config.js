@@ -11,9 +11,16 @@ module.exports = {
   },
   module: {
     rules: [
+      // {
+      //   test: /\.js$/,
+      //   loader: './loaders/test-loader.js',
+      // }
       {
         test: /\.js$/,
-        loader: './loaders/test-loader.js',
+        use: [
+          './loaders/demo/test1',
+          './loaders/demo/test2',
+        ]
       }
     ]
   },
