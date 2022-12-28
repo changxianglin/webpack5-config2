@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "properties": {
+    "persets": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

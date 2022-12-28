@@ -28,6 +28,13 @@ module.exports = {
         options: {
           author: '张三',
         }
+      },
+      {
+        test: /\.js$/,
+        loader: "./loaders/babel-loader",
+        options: {
+          presets: ["@babel/preset-env"]
+        }
       }
     ]
   },
