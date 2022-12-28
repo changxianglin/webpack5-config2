@@ -35,6 +35,15 @@ module.exports = {
         options: {
           presets: ["@babel/preset-env"]
         }
+      },
+      {
+        test: /\.(png|jpe?g)$/,
+        loader: "./loaders/file-loader",
+        type: "javascript/auto",
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
