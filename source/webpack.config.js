@@ -23,7 +23,11 @@ module.exports = {
         // ]
         // loader: './loaders/demo/test3.js',
         // use: ['./loaders/demo/test4.js', './loaders/demo/test5.js', './loaders/demo/test6.js']
-        loader: './loaders/clean-log-loader.js',
+        // loader: './loaders/clean-log-loader.js',
+        loader: './loaders/banner-loader',
+        options: {
+          author: '张三',
+        }
       }
     ]
   },
